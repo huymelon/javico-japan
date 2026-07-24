@@ -144,7 +144,15 @@ section{padding:96px 0}
 .svc-icon svg{width:28px;height:28px;stroke:var(--red)}
 .svc-card h3{font-size:18px;font-weight:900;color:var(--navy);margin-bottom:12px;line-height:1.5}
 .svc-card p{font-size:14px;color:#54657a}
-.svc-tag{display:inline-block;margin-top:18px;font-size:11.5px;font-weight:700;color:var(--green);background:rgba(22,163,74,.1);padding:5px 12px;border-radius:999px}
+.svc-tag{display:inline-block;margin-top:auto;align-self:flex-start;font-size:11.5px;font-weight:700;color:var(--green);background:rgba(22,163,74,.1);padding:5px 12px;border-radius:999px}
+.svc-card{display:flex;flex-direction:column}
+.svc-card p{margin-bottom:16px}
+.svc-list{background:#FAFBFD;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:12.5px}
+.svc-list-head{font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.6}
+.svc-list ul{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;list-style:none;margin:0;padding:0}
+.svc-list li{position:relative;padding-left:14px;color:#54657a;line-height:1.55}
+.svc-list li::before{content:"";position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:50%;background:var(--red)}
+.svc-note{margin-top:10px;color:#166534;font-weight:700;font-size:12px;line-height:1.6}
 
 /* ===== Fields ===== */
 .fields{background:var(--navy);position:relative;overflow:hidden}
@@ -539,21 +547,31 @@ footer{background:#0a1f36;color:#8fa5bb;padding:56px 0 30px}
         <div class="svc-num en">SERVICE 01</div>
         <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
         <h3><span class="ja">技能実習生の送り出し・育成就労制度への対応</span><span class="vi">Phái cử thực tập sinh kỹ năng và đáp ứng chế độ Việc làm đào tạo</span></h3>
-        <p><span class="ja">食品加工・電子組立・農業・縫製・建設・機械金属など幅広い職種に技能実習生をご提供します。ご紹介する候補者は、健康診断・適性検査・面接を通じて、健康状態・能力・就労意欲・適性を確認しています。また、2027年4月に開始予定の育成就労制度を見据え、日本語教育、専門用語教育、安全衛生教育、日本での生活・就労ルール教育からなる育成体制の整備を進めています。育成就労から特定技能1号への移行支援も視野に入れ、日本企業で長く活躍できる人材の育成を目指します。</span><span class="vi">Chúng tôi cung cấp thực tập sinh kỹ năng cho nhiều ngành nghề như chế biến thực phẩm, lắp ráp điện tử, nông nghiệp, may mặc, xây dựng, cơ khí kim loại… Các ứng viên được giới thiệu đều đã được đánh giá về sức khỏe, năng lực, động lực làm việc và sự phù hợp thông qua khám sức khỏe, kiểm tra năng lực và phỏng vấn. Hướng tới chế độ Việc làm đào tạo bắt đầu từ tháng 4/2027, chúng tôi đang hoàn thiện hệ thống đào tạo gồm: tiếng Nhật, thuật ngữ chuyên môn, an toàn vệ sinh lao động, cuộc sống và quy tắc làm việc tại Nhật Bản — đồng thời hướng đến hỗ trợ chuyển tiếp sang Kỹ năng đặc định số 1, đào tạo nguồn nhân lực có thể làm việc lâu dài tại doanh nghiệp Nhật Bản.</span></p>
+        <p><span class="ja">食品加工・電子組立・農業・縫製・建設・機械金属など幅広い職種に技能実習生をご提供。候補者は健康診断・適性検査・面接を通じて、健康状態・能力・就労意欲・適性を確認しています。</span><span class="vi">Cung cấp thực tập sinh kỹ năng cho nhiều ngành nghề: chế biến thực phẩm, lắp ráp điện tử, nông nghiệp, may mặc, xây dựng, cơ khí kim loại… Mọi ứng viên đều được đánh giá sức khỏe, năng lực, động lực làm việc và độ phù hợp qua khám sức khỏe, kiểm tra năng lực và phỏng vấn.</span></p>
+        <div class="svc-list">
+          <div class="svc-list-head"><span class="ja">育成就労制度（2027年4月開始予定）を見据えた育成体制：</span><span class="vi">Hệ thống đào tạo hướng tới chế độ Việc làm đào tạo (từ 4/2027):</span></div>
+          <ul>
+            <li><span class="ja">日本語教育</span><span class="vi">Tiếng Nhật</span></li>
+            <li><span class="ja">専門用語教育</span><span class="vi">Thuật ngữ chuyên môn</span></li>
+            <li><span class="ja">安全衛生教育</span><span class="vi">An toàn vệ sinh lao động</span></li>
+            <li><span class="ja">生活・就労ルール教育</span><span class="vi">Cuộc sống &amp; quy tắc làm việc</span></li>
+          </ul>
+          <div class="svc-note"><span class="ja">✓ 特定技能1号への移行支援も視野に、長く活躍できる人材を育成します。</span><span class="vi">✓ Hướng đến hỗ trợ chuyển tiếp sang Kỹ năng đặc định số 1 — nhân lực gắn bó lâu dài.</span></div>
+        </div>
         <span class="svc-tag"><span class="ja">技能実習制度に対応 ・ 育成就労制度は準備中</span><span class="vi">Hỗ trợ chế độ Thực tập sinh kỹ năng ・ Đang chuẩn bị cho chế độ Việc làm đào tạo</span></span>
       </div>
       <div class="svc-card reveal">
         <div class="svc-num en">SERVICE 02</div>
         <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div>
         <h3><span class="ja">特定技能人材の紹介</span><span class="vi">Giới thiệu nhân lực Kỹ năng đặc định</span></h3>
-        <p><span class="ja">技能実習修了者や日本語能力N4以上の人材ネットワークを活用し、即戦力となる特定技能1号人材をご紹介。試験対策講座も自社で実施しています。</span><span class="vi">Khai thác mạng lưới cựu thực tập sinh và ứng viên tiếng Nhật N4 trở lên để giới thiệu nhân lực Tokutei Ginou số 1 có thể làm việc ngay. Tự tổ chức các khóa luyện thi kỹ năng đặc định.</span></p>
+        <p><span class="ja">技能実習修了者や日本語能力N4以上の人材ネットワークを活用し、即戦力となる特定技能1号人材をご紹介。試験対策講座も自社で実施しています。面接から入国まで、在留資格関連の書類手続きも丁寧にサポートします。</span><span class="vi">Khai thác mạng lưới cựu thực tập sinh và ứng viên tiếng Nhật N4 trở lên để giới thiệu nhân lực Tokutei Ginou số 1 có thể làm việc ngay. Tự tổ chức các khóa luyện thi kỹ năng đặc định. Hỗ trợ đầy đủ hồ sơ, thủ tục tư cách lưu trú từ phỏng vấn đến khi nhập cảnh.</span></p>
         <span class="svc-tag"><span class="ja">元技能実習生ネットワーク</span><span class="vi">Mạng lưới cựu thực tập sinh</span></span>
       </div>
       <div class="svc-card reveal">
         <div class="svc-num en">SERVICE 03</div>
         <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
         <h3><span class="ja">介護人材の育成・送り出し</span><span class="vi">Đào tạo &amp; phái cử điều dưỡng, hộ lý</span></h3>
-        <p><span class="ja">介護分野の先駆的送り出し機関30社の一つとして、看護・介護系の教育を受けた人材を育成。介護の専門用語・現場マナーまで含めた教育を行います。</span><span class="vi">Là 1 trong 30 doanh nghiệp tiên phong ngành kaigo, JAVICO đào tạo nhân lực có nền tảng y tế – điều dưỡng, bao gồm cả thuật ngữ chuyên ngành và tác phong chăm sóc tại hiện trường Nhật Bản.</span></p>
+        <p><span class="ja">介護分野の先駆的送り出し機関30社の一つとして、看護・介護系の教育を受けた人材を育成。介護の専門用語・現場マナーまで含めた教育を行います。介護現場で求められる日本語能力（N3目安）を目指した専門教育にも対応しています。</span><span class="vi">Là 1 trong 30 doanh nghiệp tiên phong ngành kaigo, JAVICO đào tạo nhân lực có nền tảng y tế – điều dưỡng, bao gồm cả thuật ngữ chuyên ngành và tác phong chăm sóc tại hiện trường Nhật Bản. Chương trình tiếng Nhật chuyên ngành kaigo đặt mục tiêu tương đương N3 theo yêu cầu thực tế.</span></p>
         <span class="svc-tag"><span class="ja">先駆的機関30社の一つ</span><span class="vi">1 trong 30 đơn vị tiên phong</span></span>
       </div>
     </div>
